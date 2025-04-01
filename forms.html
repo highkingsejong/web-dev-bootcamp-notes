@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h1>forms</h1>
+    <form action="/tacos">
+
+        <p>
+            <label for="username">Enter a username:</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="PASSWORD" id="password" name="password">
+        </p>
+        <button>IN THE MIDDLE</button>
+
+        <p>
+            <label for="color">Enter a Color</label>
+            <input type="color" id="color">
+        </p>
+        <input type="radio">
+        <input type="button">
+        <input type="checkbox">
+        <p>
+            <label for="number">Enter a Number</label>
+            <input type="number" id="number" placeholder="Year">
+        </p>
+        <button>submit</button>
+        <!-- 타입을 버튼으로 놓으면 그냥 버튼임 -->
+        <button type="button">DO NOT SUBMIT THE FORM</button>
+        <!-- 이렇게도 할 수 있지만 비추 -->
+        <input type="submit" value="click me!">
+    </form>
+    <hr>
+    <button>outside form</button>
+    <h2>Hijacking Searches</h2>
+    <h3>search reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <p>
+            <input type="text" name="q">
+        </p>
+        <button>Let's go to reddit</button>
+    </form>
+    <h3>search youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <p>
+            <input type="text" placeholder="searching in youtube" name="search_query">
+        </p>
+        <button>Let's go</button>
+    </form>
+    <h3>search google</h3>
+    <form action="https://www.google.co.jp/search">
+        <p>
+            <label for="search-google">searching ing google</label>
+            <input type="text" id="search-google" name="q">
+        </p>
+        <button>Let's go to google</button>
+    </form>
+    <h2>more input</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">i agree to everything</label>
+
+        <p>
+            <label for="male">male</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="female">female</label>
+            <input type="radio" name="sex" id="female" value="female">
+        </p>
+        <p>
+            <label for="pet">My Favorite animal is </label>
+            <select name="favorite animal" id="pet">
+                <option disabled hidden selected>please select</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="griff">Griff</option>
+                <option value="pig">Pig</option>
+            </select>
+        </p>
+        <label for="volume">volume</label>
+        <input type="range" name="volume" id="volume" step="5" min="0" max="100">
+        <p>
+            <label for="etc">기타 특이사항</label>
+            <textarea name="note" rows="3" cols="33" id="etc"></textarea>
+        </p>
+        <button>submit</button>
+
+    </form>
+    <h2>validations demo</h2>
+    <form action="/dummy">
+        <label for="first">enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username2">username</label>
+            <input type="text" name="username2" id="username2" minlength="5" maxlength="12" required>
+        </p>
+        <input type="email" name="" id="" required>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>

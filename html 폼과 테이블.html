@@ -1,0 +1,66 @@
+<h1>table</h1>
+<table></table>
+<th>테이블 헤딩</th>
+<tr>테이블 row열</tr>
+<td>테이블 셀</td>
+
+<table>
+    <tr>
+        <th>헤더1</th>
+        <th>헤더2</th>
+        <th>헤더3</th>
+    </tr>
+    <tr>
+        <td>값1</td>
+        <td>값2</td>
+        <td>값3</td>
+    </tr>
+    <tr>
+        <td>값4</td>
+        <td>값5</td>
+        <td>값6</td>
+    </tr>
+</table>
+
+<thead>헤더</thead>
+<tbody>내용</tbody>
+<tfoot>아래 총계등</tfoot>
+
+<th rowspan="2">이러면 헤더의 높이가 두행만치</th>
+<th colspan="2">이러면 헤더가 두줄 입력 아래 세부 행</th>
+<thead>
+    <tr>
+        <th colspan="2">name</th>
+        <th rowspan="2">adult weight</th>
+        <th rowspan="2">clutches</th>
+    </tr>
+    <tr>
+        <th>speices</th>
+        <th>Scientific</th>
+
+    </tr>
+</thead>
+
+<hr>
+<h1>form</h1>
+<form action="도착목적지ex./search"></form>
+
+<input type="text" placeholder="우끼끼" id="label" name="서버로 보내는 값">
+인풋의 중요한 속성 타입 placeholder(예시텍스트)
+레이블 인풋과 하나로 묶을 수 있따
+버튼 폼 안에 넣어놓으면 눌렀을 때 자동 제출 이게 기본으로 설정되어 있는거<button type="submit"></button>
+하지만<button type="button"></button> 이래 해놓으면 그냥 하나의 버튼으로 인식되어서 아무일도 안일어남
+<input type="checkbox" name="" id="" checked>체크 되어있음
+<input type="radio" name="이걸로 연결됨" id="" value="이 값이 전달됨" checked>
+<input type="radio" name="이걸로 연결됨" id="" value="이 값이 전달됨">
+<select name="값" id="레이블연결">
+    <option disabled hidden selected>please select</option>
+    <option value="값" selected>보여지는부분</option>
+    <option value="값">보여지는부분</option>
+</select>
+<input type="range" name="" id="" step="10" min="0" max="100">스텝씩 올라감=10씩 올라감
+<label for="etc">기타 특이사항</label>
+<textarea name="note" rows="3" cols="33" id="etc" placeholder="hi"></textarea> rows는 열 cols는 행
+유효성 검사
+required 필수로 채워야함
+minlength="" maxlength="" 최소 최대 길이
