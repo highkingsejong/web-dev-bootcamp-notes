@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: #12e231 underline;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.3;
+    font-size: 1.2em;
+}

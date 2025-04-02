@@ -1,0 +1,23 @@
+h1 {
+    color: white;
+    background-color: #f3a22a;
+}
+
+h2 {
+    color: teal;
+    background-color: darkkhaki;
+}
+
+button {
+    color: white;
+    background-color: grey;
+}
+
+p {
+    color: olive;
+    background-color: rgb(233, 123, 1);
+}
+
+body {
+    background-color: #fff;
+}
