@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css property</title>
+    <link rel="stylesheet" href="css property.css">
+</head>
+
+<body>
+    <h1>h1</h1>
+    <section>
+        <div id="rgba">Lorem,
+        </div>
+        <div id="opacity">Lorem,
+        </div>
+    </section>
+    <section>
+        <h2>position</h2>
+        <div id="p1"></div>
+        <div id="p2"></div>
+        <div id="p3"></div>
+    </section>
+    <section>
+        <h2>transition</h2>
+        <div id="t1"></div>
+        <div id="t2"></div>
+        <div id="t3"></div>
+        <hr>
+        <section class="timing-function">
+            <div id="f1"></div>
+            <div id="f2"></div>
+            <div id="f3"></div>
+            <div id="f4"></div>
+        </section>
+        <main>
+            <h1>transform</h1>
+            <h1>transform</h1>
+            <h1>transform</h1>
+            <h1>transform</h1>
+        </main>
+        <main>
+            <h1>transform</h1>
+            <h1>transform</h1>
+            <h1>transform</h1>
+            <h1>transform</h1>
+        </main>
+        <article>
+            <h2>설명</h2>
+            <h3>투명도</h3>
+            <p>alpha: 0은 완벽히 투명 1 완전불투명 배경색 투명도 조절 rgba(255, 0, 0, 0.5)나 hex값 #ff0000cc로도 가능<br>
+                opacity: 0은 완벽히 투명 1 완전불투명 글자, 버튼 등 포함 모든 요소</p>
+            <h3>position</h3>
+            <p>
+                static: 기본값, 문서 흐름에 따라 배치됨<br>
+                relative: 문서 흐름에 따라 배치되지만 top, left, right, bottom 속성으로 위치 조정 가능<br>
+                absolute: 문서 흐름에서 제거되고 가장 가까운 position이 relative인 부모 요소를 기준으로 위치 조정됨 상속<br>
+                fixed: 뷰포트를 기준으로 고정됨<br>
+                sticky: 스크롤 시 고정되는 위치를 지정할 수 있음</p>
+            </p>
+            <h3>transitions</h3>
+            <p>
+                transition: 속성, 시간, timing-function, delay<br>
+                transition: all 0.5s ease-in-out 0s; <br>
+                all: 모든 속성에 적용<br>
+                0.5s: 지속시간<br>
+                ease-in-out: 가속도<br>
+                0s: 지연시간</p>
+            transition: 1s 면 1초 동안 변하는거
+            transition: 1s 2s면 2초 후에 1초 동안 변하는거
+            transition-timing-funtion ease-in은 가속
+            transition-timing-funtion ease-out은 감속
+            </p>
+            <h3>transform</h3>
+            <p>
+                transform: rotate(45deg or .25turn): 회전<br>
+                transform-origin: 50px 50px or top left: 회전 기준점<br>
+                transform: scale(2,1): 가로2배 세로 1배 확대<br>
+                transform:translateX(100px): x축으로 100px 이동<br>
+                transfrom: skew
+            </p>
+
+        </article>
+
+</body>
+
+</html>

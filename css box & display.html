@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box & display</title>
+</head>
+
+<body>
+    <main>
+        <section>컨텐츠 패딩 보더 그리고 다른 박스와의 간격 마진
+            보더를 설정할 때 보더 굵기 색과 스타일을 설정해야 보인다
+            따로 안적고 border: 두께 스타일 색 순으로 적어도 인식한다
+        </section>
+        <section>
+            box-sizing: border-box;로 설정하면 padding과 border를 포함한 크기를 설정할 수 있다
+            200px의 width를 설정하면 padding과 border를 포함한 크기가 200px이 된다
+            padding과 border를 포함하지 않으려면 (기본설정)box-sizing: content-box;로 설정하면 된다
+        </section>
+        <section>
+            패딩 속기법 padding: 10px는 사면 10px 모두 적용
+            padding: 10px 20px는 위아래 10px 좌우 20px 적용
+            padding: 10px 20px 30px는 위 10px 좌우 20px 아래 30px 적용
+            padding: 10px 20px 30px 40px는 위 10px 우 20px 아래 30px 좌 40px 적용 시계방향
+            마진 속기법도 위와 같다
+        </section>
+        <section>
+            display: inline 이면 인라인 요소가 된다 block은 블록 inline-block은 인라인 블록 요소가 된다
+            인라인 요소는 width와 height를 설정할 수 없다
+            인라인 블록은 width와 height를 설정할 수 있다
+            display: none은 요소를 숨긴다
+        </section>
+        <section>
+            <p>단위</p>
+            <p>
+                상대 단위
+            </p>
+            <ul>
+                <li>% - 부모 요소의 %</li>
+                <li>EM - 부모 요소의 배수 but 마진이나 패딩의 em은 글꼴크기의 배수</li>
+                <li>REM - 루트 html 요소의 배수
+                    <p>중첩 목록에서 em을 사용할 경우 배수도 중첩되는 단점을 해결</p>
+                    <p>모깍기는 em을 사용 글꼴크기를 기준으로 변하는 게 합당하기 때문</p>
+                </li>
+            </ul>
+            <p>
+                절대 단위
+            </p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
