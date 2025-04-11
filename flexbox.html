@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+    <h1>flexbox</h1>
+    <section id="container">
+        <div style="background-color: #80ffdb"></div>
+        <div style="background-color: #64dfdf"></div>
+        <div style="background-color: #48bfe3"></div>
+        <div style="background-color: #5390d9"></div>
+        <div style="background-color: #6930c3"></div>
+    </section>
+    <section id="flex-basis">
+        <div style="background-color: #80ffdb"></div>
+        <div style="background-color: #64dfdf"></div>
+        <div style="background-color: #48bfe3"></div>
+        <div style="background-color: #5390d9"></div>
+        <div style="background-color: #6930c3"></div>
+    </section>
+    <h2>Another Example</h2>
+    <main>
+        <section class="sidebar"></section>
+        <section class="maincontent"></section>
+        <section class="sidebar"></section>
+    </main>
+    <p>display:flex
+        가로 main axis 세로 cross axis
+        배열을 바꿀 수 있음. row가 기본 좌 우
+        flex-direction: row-reverse; /* 우 좌 방향으로 배열 */ column /* 세로 방향으로 배열 */
+        justify-content: flex-start; /* 기본값 정렬 */ flex-end; /* 기본값 반대로 정렬 */ center; /* 가운데 정렬 */
+        space-between; /* 양쪽 끝 정렬 */ space-around; /* 양쪽 끝 정렬 + 여백 */ space-evenly; /* 양쪽 끝 정렬 + 여백 + 균일한 간격 */
+        <br>
+        flex-wrap: wrap; 기본값은 컨테이너에 맞게 압축되지만 wrap을 사용하면 압축되지 않고 줄바꿈이 가능함.
+        flex-wrap: wrap-reverse; 교차축을 반대방향으로 설정
+        align-items:flex-start /* 기본값-좌로 밀착 */ flex-end; /* 기본값 반대로 정렬-우로 밀착 */
+        center; /* 가운데 정렬 */ baseline; /* 텍스트의 밑선 정렬 */ stretch; /* 늘리기 */
+        <br>
+        행이나 열이 여러 줄일 때 정렬 방법
+        align-content: flex-start; /* 기본값 */ flex-end; /* 기본값 반대로 정렬 */ center; /* 가운데 정렬 */
+        space-between; /* 양쪽 끝 정렬 */ space-around; /* 양쪽 끝 정렬 + 여백 */ space-evenly; /* 양쪽 끝 정렬 + 여백 + 균일한 간격 */
+        <br>
+        nth-of-type으로 선택해서 정렬
+        align-self: flex-start; /* 기본값 */ flex-end; /* 기본값 반대로 정렬 */ center; /* 가운데 정렬 */
+
+        align은 교차축 관점
+        flex-basis: 요소가 배치 될 때 최초 크기
+        <br>
+        nth-of-type으로 선택해서 채움,선택하지 않고 쓰면 모든 요소가 컨테이너를 꽉 채움
+        flex-grow: 요소가 남은 공간을 얼마나 차지할 것인지 비율로 설정 단위가 필요없음
+        flex-shrink: 요소가 줄어들 때 얼마나 줄어들 것인지 비율로 설정 단위가 필요없음 0은 안줄어들음
+        1과 2는 두배가 아니라 늘거나 준 크기의 두배임
+        max-width:와 min-width:로 최대 최소 크기를 설정할 수 있음
+        <br>
+        flex: 1 1 0px; /* flex-grow, flex-shrink, flex-basis */ 속기법 flex: 2 200px 최소크기 200px
+        기본값 flex: 0 1 auto; /* flex-grow, flex-shrink, flex-basis */
+
+
+
+    </p>
+</body>
+
+</html>
